@@ -19,4 +19,7 @@ int main(int argc, char *argv[]){
     sum = ntohl(data1) + ntohl(data2);
 
     printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", ntohl(data1), ntohl(data1), ntohl(data2), ntohl(data2), sum, sum);
+    
+    fclose(f2);
+    fclose(f1);
 }
